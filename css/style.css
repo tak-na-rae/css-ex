@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+p { background-color:lightyellow; }
+#wrap { background-color:pink; }
+.p1 { color:red; }
+#header > p { color:blue; }
+.container .l1 { color:white; }
+.container .l1 + .l2 { color:green; }
+.p1 ~ ul { background-color:skyblue; }
+ul.wrap .item:first-child { color:olive; }
+ul.wrap .item:nth-child(2) { color:red; }
+ul.wrap .item:last-child { color:gray; }
+.part li:hover { background-color:pink; }
+.part li:active { background-color:red; }
+#footer:hover li { background-color:yellow; }
+li[title='spot'] { color:purple; }
