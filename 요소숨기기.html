@@ -10,6 +10,9 @@
     .box { display:none; }
     .overlay { background-color:rgba(34,34,34,.75); }
     .overlay .text { color:#fff; }
+
+    section a + div { display:none; }
+    section a:hover + div { display:block; }
   </style>
 </head>
 <body>
@@ -23,5 +26,14 @@
   <div class="overlay">
     <p class="text">이 텍스트는 배경 위에 있습니다.</p>
   </div>
+
+  <br>
+
+  <section>
+    <a href="#">버튼</a>
+    <div>안녕</div>
+    <div>잘가</div>
+  </section>
+
 </body>
 </html>
