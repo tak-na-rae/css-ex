@@ -3,12 +3,22 @@
 <head>
 <meta charset="utf-8">
 <title>선택자연습예제</title>
-<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
 <style>
-div{border:1px solid orange; margin:10px;}
-p{border:1px solid green; margin:10px;}
-ul{border:1px solid purple; margin:10px;}
-li{border:1px solid skyblue; margin:10px;}
+p { background-color:lightyellow; }
+#wrap { background-color:pink; }
+.p1 { color:red; }
+#header > p { color:blue; }
+.container .l1 { color:white; }
+.container .l1 + .l2 { color:green; }
+.p1 ~ ul { background-color:skyblue; }
+ul.wrap .item:first-child { color:olive; }
+ul.wrap .item:nth-child(2) { color:red; }
+ul.wrap .item:last-child { color:gray; }
+.part li:hover { background-color:pink; }
+.part li:active { background-color:red; }
+#footer:hover li { background-color:yellow; }
+li[title='spot'] { color:purple; }
 /*========여기서부터 본인이 작성==========*/
 /*(태그선택자)p태그의 배경색상을 lightyellow로 설정하시오.*/
 /*(아이디선택자)아이디wrap의 배경색을 pink로 설정하시오.*/
