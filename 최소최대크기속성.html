@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240826-크기속성</title>
+  <style>
+    * { padding:0; margin:0; box-sizing:border-box; }
+    body { font-family:Arial,Helvetica,sans-serif; background-color:rgba(0,0,0,.75); color:#fff; }
+    .container { padding:40px; margin:0 auto; text-align:center; background-color:gold; outline:none; }
+    [class^='box'] { line-height:100px; background-color:pink; border-radius:8px; }
+    .box1 { width:80%; min-width:200px; max-width:400px; height:100px; }
+    .box2 { height:50vh; min-height:100px; max-height:200px; margin:20px 0; }
+    .box3 { width:80%; min-width:150px; max-width:300px; height:100vh; min-height:150px; max-height:300px; }
+
+    .test h2 { line-height:60px; text-align:left; }
+    .test ul li{ margin-bottom:20px; }
+    .test ul li .card { min-width:200px; max-width:400px; height:150px; text-align:center; background-color:#f08080; border-radius:8px; display:flex; align-items:center; justify-content:center; }
+    
+    .test .profile { width:300px; height:100vh; min-height:250px; max-height:400px; padding:50px 25px; text-align:center; background-color:#add8e6; border-radius:8px; }
+    .test .profile img { max-width:100px; border-radius:100px; overflow:hidden; }
+    .test .profile .name { margin:24px 0 16px; font-size:18px; font-weight:600; color:#000; }
+    .test .profile .des { color:#888; }
+
+    .test .banner-container { min-width:300px; max-width:600px; }
+    .test .banner-container img { width:100%; min-height:200px; }
+  </style>
+</head>
+<body>
+  <div class="test">
+    <h2>연습</h2>
+    <ul>
+      <li><div class="card">Card 1</div></li>
+      <li><div class="card">Card 2</div></li>
+      <li><div class="card">Card 3</div></li>
+    </ul>
+    <div class="profile">
+      <img src="https://picsum.photos/150" alt="Profile Picture" class="profile-image">
+      <p class="name">John Doe</p>
+      <span class="des">Web Developer</span>
+    </div>
+    <div class="banner-container">
+      <img src="https://picsum.photos/800/400" alt="Banner Image" class="banner-image">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="box1">min-width / max-width</div>
+    <div class="box2">min-height / max-height</div>
+    <div class="box3">min and max width/height</div>
+  </div>
+
+</body>
+</html>

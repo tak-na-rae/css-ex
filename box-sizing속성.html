@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240826-boxsizing</title>
+  <style>
+    [class$="-box"] { width:200px; padding:20px; margin:20px; text-align:center; font-size:20px; color:#fff; border:20px solid #000; }
+    .content-box { background-color:lightblue; box-sizing:content-box; }
+    .border-box { background-color:lightgrey; box-sizing:border-box; }
+  </style>
+</head>
+<body>
+  <div class="content-box">content-box</div>
+  <div class="border-box">border-box</div>
+</body>
+</html>
