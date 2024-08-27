@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240827-boxsizing2</title>
+  <style>
+    * { padding:0; margin:0; border:0; box-sizing:border-box; }
+    .test .container { width:500px; margin:0 auto; text-align:center; }
+    .test .container .box { width:200px; height:150px; font-size:16px; color:#fff; }
+    .test .container .box ~ .box { margin-top:20px; }
+    .test .container .box1 { background-color:#3498db; }
+    .test .container .box2 { background-color:#2ecc71; border:5px solid #000; }
+    .test .container .box3 { font-size:0; background-color:#e74c3c; }
+    .test .container .box3 img { width:100%; object-fit:cover; }
+    .test .container .box3 p { line-height:1; }
+
+    .container:has(.bx1) { width:300px; background-color:#ababab; border:1px solid red; }
+    .bx1 { width:100%; background-color:skyblue; border:10px solid darkblue; }
+    .bx2 { background-color:lightgreen; border:10px solid darkgreen; }
+  </style>
+</head>
+<body>
+  <div class="test">
+    <h2>// 연습</h2>
+    <div class="container">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">
+          <img src="https://picsum.photos/300/200" alt="Example Image">
+          <p>Box 3 with an image</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="bx1">box1</div>
+    <div class="bx2">box2</div>
+  </div>
+</body>
+</html>
