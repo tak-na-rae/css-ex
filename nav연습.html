@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240828-nav연습</title>
+  <style>
+    * { padding:0; margin:0; box-sizing:border-box; }
+    a { color:inherit; text-decoration:none; cursor:pointer; }
+    ul,li { list-style:none; }
+
+    nav { padding:20px; margin-bottom: 50px; text-align:center; border-bottom:1px solid #ddd; }
+    nav .gnb { margin-top:24px; }
+    nav .gnb ul { padding:0 10px; background-color:#f1f1f1; display:inline-block; border-radius:10px; }
+    nav .gnb ul li { display:inline-block; }
+    nav .gnb ul li a { padding:8px; font-size:16px; display:inline-block; }
+    nav .gnb ul li:hover a { text-decoration:underline; }
+
+    .menu ul { width:800px; margin:0 auto; border-radius:100px; overflow:hidden; }
+    .menu ul li { float:left; width:200px; text-align:center; line-height:60px; background-color:#f1f1f1; }
+    .menu ul li a { display:block; }
+    .menu ul li:hover { background-color:#222; color:#fff; }
+
+    .test { text-align:center; }
+    .test ul { padding:25px; overflow:hidden; display:inline-block; }
+    .test ul li { float:left; }
+    .test ul li a { min-width:100px; padding:16px; margin:0 5px; background-color:#222; color:#fff; display:inline-block; border-radius:100px; }
+    .test ul li a:hover { background-color:#ff60cd; }
+    .test section { width:100%; line-height:720px; text-align:center; }
+    .test section:nth-of-type(odd) { background-color:#f1f1f1; }
+    .test section:nth-of-type(even) { background-color:#f9f9f9; }
+  </style>
+</head>
+<body>
+  <div class="test">
+    <div class="nav">
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#profile">profile</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#skill">skill</a></li>
+      </ul>
+    </nav>
+    <section id="home">home</section>
+    <section id="about">about</section>
+    <section id="profile">profile</section>
+    <section id="portfolio">portfolio</section>
+    <section id="skill">skill</section>
+  </div>
+
+  <nav>
+    <h1><a href="#">logo</a></h1>
+    <div class="gnb">
+      <ul>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#">메뉴1</a></li>
+      <li><a href="#">메뉴2</a></li>
+      <li><a href="#">메뉴3</a></li>
+      <li><a href="#">메뉴4</a></li>
+    </ul>
+  </div>
+</body>
+</html>

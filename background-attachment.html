@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240828-background-attachment</title>
+  <style>
+    section { width:90vw; height:90vh; margin:4vh auto; border:1px solid #000; }
+    article { width:100%; height:100%; background-repeat:no-repeat; background-position:center; background-attachment:scroll; background-attachment:fixed; }
+    section article:nth-child(1) { background-image:url(images/car1.jpg); }
+    section article:nth-child(2) { background-image:url(images/car2.jpg); }
+
+    .ex [class^="bx"] { width:100%; text-align:center; }
+    .ex [class^="bx"]:nth-child(odd) { height:400px; background-repeat:no-repeat; background-position:center; background-size:cover; background-attachment:fixed; }
+    .ex [class^="bx"]:nth-child(1) { background-image:url(images/background-attachment_01.jpg); }
+    .ex [class^="bx"]:nth-child(3) { background-image:url(images/background-attachment_01.jpg); }
+    .ex [class^="bx"]:nth-child(5) { background-image:url(images/background-attachment_02.jpg); }
+    .ex [class^="bx"]:nth-child(even) { padding:100px 0; }
+    .ex [class^="bx"]:nth-child(even) ul { text-align:left; display:inline-block; }
+    </style>
+</head>
+<body>
+  <div class="ex">
+    <div class="bx1"></div>
+    <div class="bx2">
+      <h1>BACKGROUND-ATTACHMENT</h1>
+      <p>이 속성은 배경이미지를 어떻게 고정할지를 정하는 속성입니다.</p>
+      <p>스크롤 하여 내용을 볼 때 배경 이미지가 내용과 같이 움직일지,<br> 
+        또는 배경 이미지는 고정되어 있을지 결정 할 수 있습니다.</p>
+    </div>
+    <div class="bx3"></div>
+    <div class="bx4">
+      <h1>사용 가능 속성</h1>
+      <ul>
+        <li><b>scroll</b> : 기본 값입니다. 요소에 고정되어있습니다.</li>
+        <li><b>local</b> : 요소 안 내용에 고정됩니다.<br/>요소 안을 스크롤을 할 때, 이미지가 내부의 내용과 같이 움직입니다.</li>
+        <li><b>fixed</b> : background-position의 좌표를 뷰포트(웹 페이지 화면)를 기준으로 합니다.</li>
+      </ul>
+    </div>
+    <div class="bx5"></div>
+  </div>
+
+  <section>
+    <article></article>
+    <article></article>
+  </section>
+</body>
+</html>

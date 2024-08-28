@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240828-float속성</title>
+  <style>
+    .parent { background-color:#ccc; overflow:hidden; }
+    .child { float:left; width:200px; height:200px; }
+    .ch1 { background-color:#fc0; }
+    .ch2 { background-color:#f60; }
+    .ch3 { background-color:#f00; }
+    .uncle { clear:both; width:200px; height:200px; background-color:greenyellow; font-size:24px; color:#fff }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child ch1">A</div>
+    <div class="child ch2">B</div>
+    <div class="child ch3">C</div>
+  </div>
+  <div class="uncle">삼촌</div>
+</body>
+</html>

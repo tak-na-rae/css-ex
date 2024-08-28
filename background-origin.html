@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240828-backgroundorigin</title>
+  <style>
+    * { padding:0; margin:0; outline:none; border:0; box-sizing:border-box; }
+
+    .test { width:100%; min-width:1200px; padding:90px 0; text-align:center; background:transparent url(images/searchBackground.jpg) center/cover; }
+    .test .search h2 { margin-bottom:24px; font-size:27px; font-weight:500; color:#fff; }
+    .test .search input { width:800px; height:40px; padding-left:60px; background:#fff url(images/search_b.png) no-repeat 16px 10px/20px; font-size:18px; }
+
+    .container div { width:400px; height:260px; padding:20px; margin:20px; border:8px dashed orange;
+          background-image:url(images/christmas.png); background-repeat:no-repeat; }
+    .test1 { background-origin:content-box; background-clip:content-box; }          
+    .test2 { background-origin:padding-box; background-clip:padding-box; }          
+    .test3 { background-origin:border-box; background-clip:border-box; }          
+  </style>
+</head>
+<body>
+  <div class="test">
+    <form class="search">
+      <fieldset>
+        <h2>네트워크 통합검색</h2>
+        <input type="text" placeholder="검색어를 입력하세요.">
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="test1">
+      <h3>background-origin:border-box</h3>
+    </div>
+    <div class="test2">
+      <h3>background-origin:padding-box</h3>
+    </div>
+    <div class="test3">
+      <h3>background-origin:border-box</h3>
+    </div>
+  </div>
+</body>
+</html>
