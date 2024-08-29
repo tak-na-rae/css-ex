@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240829-transform속성</title>
+  <style>
+    [class^="box"] { width:100px; height:100px; margin-bottom:50px; background-color:skyblue; border:1px solid #000; }
+
+    .box1 { transform:translate(100px,50px); }
+    .box2 { transform:scale(1.5); }
+    .box3 { transform:rotate(45deg); }
+    .box4 { transform:skewX(20deg) skewY(40deg); }
+    .box5 { transform:translateX(100px) scale(1.2) skew(50deg); }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+  <div class="box5"></div>
+</body>
+</html>

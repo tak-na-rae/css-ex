@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240829-box연습</title>
+  <style>
+    * { padding:0; margin:0; box-sizing:border-box; }
+    a { color:inherit; text-decoration:none; }
+    ul,li { list-style:none; }
+
+    body { min-width:860px; text-align:center; }
+    .layout_fix { max-width:840px; margin:0 auto; }
+    header { padding:25px 0; }
+    header h1 { width:180px; height:60px; margin:0 auto; }
+    header #gnb { width:360px; margin:0 auto; background-color:#f1f1f1; border-radius:8px; }
+    header #gnb li { padding:12px 0; margin-left:24px; line-height:1; display:inline-block; }
+    header #gnb li:hover a { text-decoration:underline; }
+
+    #banner { line-height:240px; background-color:#222; color:#fff; }
+
+    #contents { overflow:hidden; }
+    #contents .box { float:left; width:260px; height:190px; margin-top:15px; margin-left:15px; }
+    #contents .box:nth-child(odd) { background-color:#f9f9f9; }
+    #contents .box:nth-child(even) { background-color:#f1f1f1; }
+
+    footer { padding:0 15px 15px; margin-top:16px; overflow:hidden;}
+    footer > div { width:260px; height:70px; background-color:#f9f9f9; display:inline-block; overflow:hidden; }
+    footer .left { float:left; }
+    footer .right { float:right; }
+  </style>
+</head>
+<body>
+  <div class="layout_fix">
+    <header>
+      <h1 id="logo"><a href="#">logo</a></h1>
+      <div id="gnb">
+        <ul>
+          <li><a href="#">메뉴1</a></li>
+          <li><a href="#">메뉴2</a></li>
+          <li><a href="#">메뉴3</a></li>
+          <li><a href="#">메뉴4</a></li>
+        </ul>
+      </div>
+    </header>
+    <section id="banner">banner</section>
+    <section id="contents">
+      <article class="box">item1</article>
+      <article class="box">item2</article>
+      <article class="box">item3</article>
+      <article class="box">item4</article>
+      <article class="box">item5</article>
+      <article class="box">item6</article>
+    </section>
+    <footer>
+      <div class="left">left</div>
+      <div class="right">right</div>
+    </footer>
+  </div>
+</body>
+</html>
