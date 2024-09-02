@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240902-퀵메뉴</title>
+  <style>
+    *{   
+      margin:0;   
+      padding:0;   
+      list-style:none;   
+    }
+    a{ text-decoration:none; color:inherit; }
+    header , section , footer{   
+      width:1000px;
+      height:900px;
+      margin:0 auto;
+    }
+    header{ background-color:yellow; }
+    section{ background-color:lightgreen; }
+    footer{ background-color:skyblue; }
+
+    .quick_menu { width:80px; text-align:center; background-color:#f9f9f9; font-size:14px;
+                  position:fixed; top:100px; left:50%; transform:translate(500px,0); }
+    .quick_menu .tit { padding:22px 16px; line-height:1.32; background-color:tomato; font-weight:700; color:#fff; word-break:keep-all; user-select:none; }
+    .quick_menu .list li ~ li { border-top:1px solid #e2e2e2; }
+    .quick_menu .list a { padding:33px 8px; line-height:1; display:block; }
+    .quick_menu .list li:last-child { background-color:#e2e2e2; font-weight:700; color:#222; }
+  </style>
+</head>
+<body>
+  <div class="quick_menu">
+    <div class="tit">Quick MENU</div>
+    <ul class="list">
+      <li>
+        <a href="#">메뉴1</a>
+      </li>
+      <li>
+        <a href="#">메뉴2</a>
+      </li>
+      <li>
+        <a href="#">메뉴3</a>
+      </li>
+      <li>
+        <a href="#">메뉴4</a>
+      </li>
+      <li>
+        <a href="javascript:;">TOP</a>
+      </li>
+    </ul>
+  </div>
+  <header></header>
+  <section></section>
+  <footer></footer>
+</body>
+</html>

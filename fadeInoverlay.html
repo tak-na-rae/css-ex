@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240902-overlay</title>
+  <style>
+    * { padding:0; margin:0; box-sizing:border-box; }
+    ul,li { list-style:none; }
+    img { width:100%; display:block; }
+
+    .container1 { width:80%; margin:0 auto; position:relative; cursor:pointer; }
+    .container1 .overlay { position:absolute; top:50%; left:50%; opacity:0; visibility:hidden; transition:.25s ease; }
+    .container1 .overlay .txt { line-height:1; font-size:40px; font-weight:300; color:#fff; letter-spacing:-1px; transform:translate(-50%,-50%); }
+    .container1:hover .overlay { opacity:1; visibility:visible; }
+    
+    .test i[class^="fa-"] { font-size:40px; color:#e9d4b0; }
+    .test ul { width:1080px; margin:0 auto; overflow:auto; }
+    .test ul li { float:left; width:250px; height:240px; margin:0 10px; position:relative; }
+    .test ul li > img { height:240px; object-fit:cover;  }
+    .test ul li .overlay { background-color:rgba(0,0,0,.5); position:absolute; top:0; right:0; bottom:0; left:0; z-index:1; opacity:0; visibility:hidden; transition:.25s ease; cursor:pointer; }
+    .test ul li .overlay .txt { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); }
+    .test ul li:hover .overlay { opacity:1; visibility:visible; }
+
+    .container2 {  }
+    </style>
+  <script src="https://kit.fontawesome.com/e782e2b5ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container1">
+    <img src="images/panda.jpg" alt="Panda">
+    <div class="overlay">
+      <div class="txt">코!</div>
+    </div>
+  </div>
+  <div class="test">
+    <ul>
+      <li>
+        <img src="images/van1.jpg" alt="이미지1">
+        <div class="overlay">
+          <div class="txt">
+            <i class="fa-solid fa-face-smile"></i>
+            <i class="fa-regular fa-face-smile"></i>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="images/van2.jpg" alt="이미지2">
+        <div class="overlay">
+          <div class="txt">
+            <i class="fa-solid fa-face-grin-wide"></i>
+            <i class="fa-regular fa-face-grin-wide"></i>
+          </div>
+        </div>
+    </li>
+      <li>
+        <img src="images/van1.jpg" alt="이미지3">
+        <div class="overlay">
+          <div class="txt">
+            <i class="fa-solid fa-face-smile"></i>
+            <i class="fa-regular fa-face-smile"></i>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="images/van2.jpg" alt="이미지4">
+        <div class="overlay">
+          <div class="txt">
+            <i class="fa-solid fa-face-grin-wide"></i>
+            <i class="fa-regular fa-face-grin-wide"></i>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container2">
+    
+  </div>
+</body>
+</html>
