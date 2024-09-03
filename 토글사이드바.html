@@ -19,7 +19,7 @@
 
     .side-bar nav { text-align:center; }
     .side-bar nav a { color:#fff; }
-    .side-bar nav > ul > li { padding:10px 20px; }
+    .side-bar nav > ul > li { padding:10px 0; }
     .side-bar nav > ul > li > a { position:relative; display:inline-block; }
     .side-bar nav > ul > li > a::before { content:''; width:0; height:1px; background-color:#fff; position:absolute; bottom:0; left:0; display:block; }
     .side-bar nav > ul > li > a:hover::before { width:100%; transition:.25s ease; }
@@ -32,9 +32,21 @@
       content:" [-]";
     }
 
-    .side-bar nav .sub2 { font-size:14px; display:none; }
-    .side-bar nav > ul > li > a:hover + .sub2 { display:block; }
-    .side-bar nav .sub2 li { margin-top:10px; }
+    .side-bar nav .sub2 { width:100%; display:none; }
+    .side-bar nav .sub2 li { margin-top:10px; font-size:14px; position:relative; display:block; }
+    .side-bar nav .sub3 li { background-color:#222; color:#fff; position:absolute; top:0; left:100%; z-index:1; }
+    .side-bar nav .sub3 li a { white-space:nowrap; }
+    .side-bar nav > ul > li:hover > .sub2 { display:block; }
+    .side-bar .sub3 { display:none; }
+    .side-bar .sub2 > li:hover > .sub3 { display:block; }
+
+    /*가상 요소*/
+    ul > li > a:not(:only-child)::after{
+      content:" [+]";
+    }
+    ul > li > a:hover:not(:only-child)::after{
+      content:" [-]";
+    }
 
   </style>
 </head>
@@ -51,7 +63,13 @@
           <a href="#">1차메뉴 아이템</a>
           <ul class="sub2">
             <li><a href="#">2차메뉴</a></li>
-            <li><a href="#">2차메뉴</a></li>
+            <li>
+              <a href="#">2차메뉴</a>
+              <ul class="sub3">
+                <li><a href="#">3차메뉴</a></li>
+                <li><a href="#">3차메뉴</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li>

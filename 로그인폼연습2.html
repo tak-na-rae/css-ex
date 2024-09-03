@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240903-로그인연습2</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * { padding:0; margin:0; box-sizing:border-box; }
+    body { font-family: "Noto Sans KR", sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    ul,li { list-style:none; }
+    input { border-radius:0; outline:none; }
+
+    #popup { position:fixed; top:0; right:0; bottom:0; left:0; background-color:rgba(0,0,0,.3); }
+    #popup .item { width:580px; text-align:center; background-color:#fff; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); box-shadow:0 10px 40px 0 rgba(0,0,0,.16); }
+    #popup .item_head { padding:40px 24px; border-bottom:1px solid #1aa5d0; }
+    #popup .item_head h2 { font-size:36px; font-weight:600; color:#1aa5d0; letter-spacing:-1px; }
+    #popup .item_head p { max-width:335px; margin:12px auto 0; line-height:1.52; font-size:16px; color:#666; word-break:keep-all; }
+    #popup .item_body { padding:24px 155px 24px 24px; text-align:left; position:relative; }
+    #popup .item_body li + li { margin-top:16px; }
+    #popup .item_body span { width:100px; font-size:16px; font-weight:500; display:inline-block; }
+    #popup .item_body span + input { width:220px; height:30px; padding:0 8px; background-color:#f9f9f9; border:1px solid #e2e2e2; }
+    #popup .item_body span + input:focus { border:1px solid #1aa5d0; }
+    #popup .item_body .btn_login { padding:26px 30px 32px; line-height:1; background-color:#1aa5d0; font-size:22px; color:#fff; position:absolute; top:22px; right:24px; }
+    #popup .item_foot { padding:8px 24px 24px; text-align:right; border-top:1px solid #e2e2e2; }
+    #popup .item_foot .btn_find { font-size:15px; font-weight:500; color:#666; letter-spacing:-.5px; }
+  </style>
+</head>
+<body>
+  <div id="popup">
+    <div class="item">
+      <div class="item_head">
+        <h2>로그인</h2>
+        <p>
+          <b>그린컴퓨터아카데미</b>에 오신것을 환영합니다.
+          로그인 후 다양한 서비스를 이용하실 수 있습니다.
+        </p>
+      </div>
+      <div class="item_body">
+        <ul>
+          <li>
+            <span>회원아이디</span>
+            <input type="text"/>
+          </li>
+          <li>
+            <span>비밀번호</span>
+            <input type="password"/>
+          </li>
+        </ul>
+        <a href="#" class="btn_login">로그인</a>
+      </div>
+      <div class="item_foot">
+        <a href="#" class="btn_find">아이디/비밀번호 찾기</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

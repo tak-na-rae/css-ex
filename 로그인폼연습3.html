@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240903-로그인연습3</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * { padding:0; margin:0; font-family:"Noto Sans KR", sans-serif; box-sizing:border-box; }
+    a { color:inherit; text-decoration:none; }
+    ul,li { list-style:none; }
+    input { border-radius:0; border:0; outline:none; }
+    input[type="checkbox"] { display:none; }
+
+    .chk_bx label { color:#999; vertical-align:middle; }
+    .chk_bx input[type="checkbox"]:checked + label { color:#659a63; }
+    .chk_bx input[type="checkbox"] + label .chk { width:14px; height:14px; margin-right:4px; border:1px solid #999; display:inline-block; vertical-align:middle; cursor:pointer; }
+    .chk_bx input[type="checkbox"]:checked + label .chk { background:#659a63; border:0; }
+  
+    #popup { position:fixed; top:0; right:0; bottom:0; left:0; background-color:rgba(0,0,0,.3); }
+    #popup .item { width:500px; text-align:center; background-color:#fff; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); border-radius:8px; box-shadow:0 10px 40px 0 rgba(0,0,0,.16); }
+    #popup .item_body { padding:40px; }
+    #popup .item_body h2 { margin-bottom:40px; font-size:32px; font-weight:600; }
+    #popup .item_body h2 ~ input { width:100%; padding:0 16px; height:46px; margin-bottom:10px; font-size:15px; color:#222; border:1px solid #e2e2e2; display:block; }
+    #popup .item_body h2 ~ input:focus { border:1px solid #222; }
+    #popup .item_body_keep { text-align:right; overflow:hidden; }
+    #popup .item_body_keep .chk_bx { float:left; position:relative; top:6px; }
+    #popup .item_body_keep .btn_login { width:76px; height:46px; padding-bottom:4px; background-color:#659a63; font-size:16px; color:#fff; vertical-align:middle; display:inline-block; cursor:pointer; }
+    #popup .item_foot { padding:16px 40px 20px; border-top:1px solid #e2e2e2; }
+    #popup .item_foot .find_list li { position:relative; display:inline-block; }
+    #popup .item_foot .find_list li + li { margin-left:24px; }
+    #popup .item_foot .find_list li + li::before { content:''; width:1px; height:12px; margin-top:-4px; background-color:#ccc; position:absolute; top:50%; left:-15px; display:inline-block; }
+  </style>
+  <script src="https://kit.fontawesome.com/e782e2b5ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="popup">
+    <div class="item">
+      <div class="item_body">
+        <form action="">
+          <h2>LOGIN</h2>
+          <input type="email" placeholder="이메일"/>
+          <input type="password" placeholder="비밀번호"/>
+          <div class="item_body_keep">
+            <div class="chk_bx">
+              <input type="checkbox" id="login_keep" name="login_keep" checked/>
+              <label class="chk_txt" for="login_keep">
+                  <span class="chk"></span>
+                  <span class="txt">로그인 유지</span>
+              </label>
+            </div>
+            <input type="submit" value="로그인" class="btn_login">
+        </form>
+        </div>
+      </div>
+      <div class="item_foot">
+        <ul class="find_list">
+          <li><a href="#">아이디/비밀번호 찾기</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

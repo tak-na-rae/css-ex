@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240903-로그인연습1</title>
+  <style>
+    * { padding:0; margin:0; box-sizing:border-box; }
+    a { color:inherit; text-decoration:none; }
+    input { border-radius:0; outline:none; }
+
+    #popup { position:fixed; top:0; right:0; bottom:0; left:0; background-color:rgba(0,0,0,.3); }
+    #popup .item { width:300px; text-align:center; background-color:#fff; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); border-radius:16px; box-shadow:0 10px 40px 0 rgba(0,0,0,.16); }
+    #popup .item_head { padding:16px 24px 8px; text-align:right; line-height:1 }
+    #popup .item_head .close { font-size:24px; color:#555; }
+    #popup .item_body { padding:16px 24px 32px; text-align:left; }
+    #popup .item_body .tit { margin-bottom:10px; line-height:1; font-size:14px; color:#666; }
+    #popup .item_body .tit + input { width:100%; height:40px; padding:0 16px; margin-bottom:16px; background-color:#fff; border:1px solid #e2e2e2; }
+    #popup .item_body .tit + input:focus { border:1px solid #222; }
+    #popup .item_body .btn_login { line-height:44px; text-align:center; background-color:#222; font-size:15px; color:#fff;  display:block; }
+  </style>
+  <script src="https://kit.fontawesome.com/e782e2b5ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="popup">
+    <div class="item">
+      <div class="item_head">
+        <a href="#" class="close"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="item_body">
+        <p class="tit">사용자명 또는 이메일</p>
+        <input type="email"/>
+        <p class="tit">암호</p>
+        <input type="password"/>
+        <a href="#" class="btn_login">로그인</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
