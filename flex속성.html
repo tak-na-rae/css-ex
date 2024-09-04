@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240904-flex속성</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    * { padding:0; margin:0; box-sizing:border-box; }
+    body { font-family: "Noto Sans KR", sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    ul,li { list-style:none; }
+
+    main {
+      width:100%;
+      height:100vh;
+      background:lightcyan;
+    }
+    section {
+      border:10px solid blue;
+      display:inline-flex;
+      flex-direction:row;
+
+    }
+    section article {
+      width:100px;
+      height:100px;   
+      background:skyblue;
+      border:1px solid #000;
+    }
+  
+    /* section {
+      border:10px solid blue;
+      display:flex;
+    } */
+    /* 부모 요소인 section을 인라인 속성으로 바꾸기 */
+    /* section {
+      border:10px solid blue;
+      display:inline-flex;
+    } */
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+    </section>
+  </main>
+</body>
+</html>
