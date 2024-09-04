@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240904-컨텐츠정렬연습2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    * { padding:0; margin:0; box-sizing:border-box; }
+    body { min-width:1280px; font-family: "Noto Sans KR", sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    ul,li { list-style:none; }
+
+    .layout_fix { width:1080px; padding:10px; margin:0 auto; }
+    .wrap { display:flex; }
+    .wrap ul { flex:1; }
+    .wrap ul li { font-size:14px; color:#666; word-break:keep-all; display:flex; gap:10px; }
+    .wrap ul li ~ li { margin-top:20px; }
+    .wrap .content { padding:10px 0; border-width:1px 0; border-style:solid; border-color:#e2e2e2; display:flex; flex-direction:column; }
+    .wrap .content .tit { margin-bottom:auto; font-size:18px; color:#222; }
+    .wrap > img { width:520px; min-width:520px; margin-left:10px; }
+  </style>
+</head>
+<body>
+  <div class="layout_fix">
+    <div class="wrap">
+      <ul>
+        <li>
+          <img src="https://placehold.co/160x160.png" alt="">
+          <div class="content">
+            <div class="tit">DESCRIPTION</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eveniet tempore praesentium optio reprehenderit deserunt quam accusantium maxime impedit molestias. Iusto harum error, quis minima pariatur illum alias nisi autem!</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://placehold.co/160x160.png" alt="">
+          <div class="content">
+            <div class="tit">DESCRIPTION</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eveniet tempore praesentium optio reprehenderit deserunt quam accusantium maxime impedit molestias. Iusto harum error, quis minima pariatur illum alias nisi autem!</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://placehold.co/160x160.png" alt="">
+          <div class="content">
+            <div class="tit">DESCRIPTION</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eveniet tempore praesentium optio reprehenderit deserunt quam accusantium maxime impedit molestias. Iusto harum error, quis minima pariatur illum alias nisi autem!</p>
+          </div>
+        </li>
+      </ul>
+      <img src="https://placehold.co/520x520.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
