@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240905-타임라인</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    * { padding:0; margin:0; box-sizing:border-box; }
+    body { min-width:1280px; background-color:#f9f9f9; font-family:"Noto Sans KR", sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    ul,li { list-style:none; }
+
+    .timeline { max-width:1200px; margin:0 auto; position:relative; }
+    .timeline::after { content:''; width:4px; background-color:#222; position:absolute; top:0; bottom:0; left:calc(50% - 2px); }
+    .container { width:50%; padding:10px 40px; position:relative; }
+    .container::after { content:''; width:25px; height:25px; background-color:#222; position:absolute; top:15px; right:-16px; z-index:1; border:4px solid #ff9191; border-radius:50%; }
+    .left { left:0; }
+    .left::before { content:''; width:0; height:0; position:absolute; top:22px; right:30px; border-width:12.5px 0px 12.5px 25px; border-style:solid; border-color:transparent transparent transparent #222222; }
+    .right { left:50%; }
+    .right::before { content:''; width:0; height:0; background:transparent; position:absolute; top:22px; right:0; left:30px; border-style:solid; border-width:12.5px 25px 12.5px 0px; border-color:transparent #222222 transparent transparent; border-radius:0; }
+    .right.container::after { right:0; left:-16px; }
+    .content { padding:20px 30px; background-color:#222; color:#fff; border-radius:6px; }
+
+    @media (max-width:600px){
+      body { min-width:320px; }
+      .timeline::after { left:30px; } /*선*/
+      .container { width:100%; padding-right:25px; padding-left:70px; }
+      .container::before { left:58px; border-width:12.5px 25px 12.5px 0px; border-color:transparent #222222 transparent transparent; }
+      .container::after { left:16px; } /*동글*/
+      .right { left:0; }
+      .right.container::after { left:16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h2>2024</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eveniet!</p>
+      </div>
+    </div>
+  </div>
+  <div class="timeline">
+    <div class="container right">
+      <div class="content">
+        <h2>2023</h2>
+        <p>Eaque vero est ratione quia magnam, repellendus quibusdam expedita a quaerat. Quas nihil nisi minima error iste deleniti aspernatur eius.</p>
+      </div>
+    </div>
+  </div>
+  <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h2>2022</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eveniet! Eaque vero est ratione quia magnam, repellendus</p>
+      </div>
+    </div>
+  </div>
+  <div class="timeline">
+    <div class="container right">
+      <div class="content">
+        <h2>2021</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eveniet! Eaque vero est ratione quia magnam. Quas nihil nisi minima error iste deleniti aspernatur eius.</p>
+      </div>
+    </div>
+  </div>
+  <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h2>2020</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eveniet! Eaque vero est ratione quia magnam, repellendus quibusdam expedita a quaerat. Quas nihil nisi minima error iste deleniti aspernatur eius.</p>
+      </div>
+    </div>
+  </div>
+  <div class="timeline">
+    <div class="container right">
+      <div class="content">
+        <h2>2020</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eveniet! Eaque vero est ratione quia magnam, repellendus quibusdam expedita a quaerat.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
