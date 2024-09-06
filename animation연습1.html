@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240906-animation연습</title>
+  <style>
+    div { width:200px; height:200px; margin:200px auto 0; }
+    img { animation:item 2s infinite alternate; }
+    @keyframes item {
+      0% {
+        transform:translateY(-100px);
+      }
+      100% {
+        transform:translateY(200px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div><img src="images/balloon.png" alt=""></div>
+</body>
+</html>

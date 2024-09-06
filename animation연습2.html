@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240906-animation연습2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    * { padding:0; margin:0; box-sizing:border-box; }
+    body { min-width:1280px; background-color:#fff; font-family:"Noto Sans KR", sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    ul,li { list-style:none; }
+
+    .layout_fix { max-width:800px; margin:0 auto; }
+    .panel { padding:38px 90px 38px 0; margin-top:50px; background-color:#41c4b2; position:relative; display:flex; align-items:center; justify-content:space-between; }
+    .panel .images { max-width:380px; }
+    .panel img { position:absolute; }
+    .panel .man { top:46px; z-index:1; animation:yy 1.5s infinite alternate; }
+    @keyframes yy {
+      0% { transform:translateY(-20px); }
+      100% { transform:translateY(30px); }
+    }
+    .panel .cloud { top:44px; left:40px; }
+    .panel .mars { top:48px; left:300px; animation:rotate 2s infinite alternate; }
+    @keyframes rotate {
+      0% { transform:rotate(-25deg); }
+      100% { transform:rotate(40deg); }
+    }
+    .panel .txt { max-width:140px; }
+    .panel .txt h2 { font-size:22px; font-weight:400; color:#fff; white-space:nowrap; }
+    .panel .txt p { margin-top:12px; margin-bottom:20px; text-align:center; font-size:12px; font-weight:300; color:#fff; }
+    .panel .txt .btn_more { padding:10px 0 12px; line-height:1; text-align:center; font-weight:300; color:#fff; border:1px solid #fff; letter-spacing:.5px; display:block; }
+    .panel .txt .btn_more:hover { background-color:#fff; font-weight:400; color:#222; transition:.25s ease; }
+  </style>
+</head>
+<body>
+  <div class="layout_fix">
+    <div class="panel">
+      <div class="images">
+        <img src="images/space_man.png" class="man">
+        <img src="images/cloud.png" class="cloud">
+        <img src="images/mars.png" class="mars">
+      </div>
+      <div class="txt">
+        <h2>Space Tourism</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cum ipsum officia voluptatem eligendi corporis voluptatibus dicta voluptates sed</p>
+        <a href="#" class="btn_more">READ MORE</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

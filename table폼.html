@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>240906-table폼</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"
+    />
+    <style>
+      * { padding:0; margin:0; font-family:"Noto Sans KR", sans-serif; box-sizing:border-box; }
+      body { min-width:1280px; background-color:#fff; }
+      a { color:inherit; text-decoration:none; }
+      ul,li { list-style:none; }
+      input:not([type="radio"]), select { width:100%; height:40px; padding:0 10px; border-radius:0; border:1px solid #e2e2e2; outline:none; }
+      input[disabled] { background-color:#f3f3f3; }
+      input::-webkit-outer-spin-button,input::-webkit-inner-spin-button { -webkit-appearance:none; appearance:none; }
+      input:focus { border:1px solid #ffa500; }
+      table { width:100%; position:relative; border-collapse:collapse; border-top:1px solid #222; }
+      label { margin-right:16px; }
+
+      .wrap { max-width:500px; margin:50px 0 0 50px; }
+      .wrap table th {
+        padding-left:26px;
+        text-align:left;
+        font-size:15px;
+        font-weight:500;
+        /* background-color:#f9f9f9; */
+        position:relative;
+        border-bottom:1px solid #e2e2e2;
+        white-space:nowrap;
+      }
+      .wrap table th.required::before { content:'*'; margin-top:-8px; position:absolute; top:50%; left:16px; }
+      .wrap table td {
+        padding:20px;
+        height:60px;
+        text-align:left;
+        font-size:15px;
+        color:#222;
+        border-bottom:1px solid #e2e2e2;
+        vertical-align:middle;
+        word-break:keep-all;
+      }
+      .flex_items {
+        display: flex;
+        align-items: center;
+      }
+      .flex_items > input,.flex_items > select {
+        margin: 0 8px;
+        flex: 0 1 auto;
+      }
+      .flex_items :first-child {
+        margin-left: 0;
+      }
+      .flex_items :last-child {
+        margin-right: 0;
+      }
+      .flex_items.block2 :first-child {
+          margin: 0;
+      }
+      .wrap table .flex_items + .flex_items { margin-top:8px; }
+      .wrap table tr.rrn td { padding-right:93px; }
+      .wrap table tr.rrn td input ~ input { max-width:40px; }
+      .wrap table tr.addr input[type="number"] { width:120px; }
+      .wrap table tr.addr input[type="number"] + a { width:80px; line-height:40px; text-align:center; background-color:#222; font-size:14px; color:#fff; display:block; }
+      .wrap .btn_next { width:120px; line-height:46px; margin:25px auto; text-align:center; background-color:#ffa500; color:#fff; display:block; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <table>
+        <colgroup>
+          <col style="width:125px"/>
+          <col style="width:auto"/>
+        </colgroup>
+        <tbody>
+          <tr> 
+            <th class="required">후원자 구분</th>
+            <td>
+              <input type="radio" name="user-group" id="group-radio1" checked/>
+              <label for="group-radio1">
+                <span class="txt">개인</span>
+              </label>
+              <input type="radio" name="user-group" id="group-radio2"/>
+              <label for="group-radio2">
+                <span class="txt">기업</span>
+              </label>
+              <input type="radio" name="user-group" id="group-radio3"/>
+              <label for="group-radio3">
+                <span class="txt">단체</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th class="required">성명</th>
+            <td>
+              <input type="text">
+            </td>
+          </tr>
+          <tr class="rrn">
+            <th>주민번호</th>
+            <td>
+              <div class="flex_items">
+                <input type="number"> - <input type="number">&nbsp;&nbsp;******
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>연락처</th>
+            <td>
+              <div class="flex_items">
+                <select name="" id="">
+                  <option value="">010</option>
+                  <option value="">011</option>
+                  <option value="">016</option>
+                  <option value="">017</option>
+                  <option value="">019</option>
+                </select>
+                - <input type="tel"> - <input type="tel">
+              </div>
+            </td>
+          </tr>
+          <tr class="addr">
+            <th>주소</th>
+            <td>
+              <div class="flex_items">
+                <input type="number" disabled><a href="#" class="btn_addr">우편번호</a>
+              </div>
+              <div class="flex_items">
+                <input type="text" disabled>
+              </div>
+              <div class="flex_items block2">
+                <input type="text" placeholder="상세주소">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>이메일</th>
+            <td>
+              <div class="flex_items">
+                <input type="text">@<input type="text">
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#" class="btn_next">다음단계</a>
+    </div>
+  </body>
+</html>

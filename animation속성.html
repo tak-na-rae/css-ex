@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240906-animation</title>
+  <style>
+    [class^='box'] { width:100px; height:100px; background-color:red; }
+    .box {
+      /* animation-name:color; 이름 */
+      /* animation-duration: 1.5s; 시간 */
+      /* animation-delay:.5s;딜레이*/
+      /* animation-iteration-count:infinite; 반복 횟수 */
+      /* animation-direction:alternate; 애니메이션 방향*/
+      /* animation-timing-function:linear; 타이밍제어*/
+      /* animation-fill-mode: none; forwards 마지막값 유지 backwards 처음값 유지 */
+      /* animation-play-state: paused 정지 running 재생 */
+      animation: color 2s 3s infinite;
+    }
+    @keyframes color {
+      from {
+        /* 시작 */
+        background-color:red;
+      }
+      to {
+        /* 끝 */
+        background-color:blue;
+      }
+    }
+
+    .box1 { margin-top:15px;
+      animation: example 2s infinite alternate;
+    }
+    @keyframes example {
+      0% {
+        background-color:red;
+        transform:translate(200px,0)
+      }
+      100% {
+        background-color:yellow;
+        transform:translate(0,0)
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="box1"></div>
+</body>
+</html>
