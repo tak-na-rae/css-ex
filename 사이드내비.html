@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240911-사이드네비</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    * { padding:0; margin:0; font-family:"Noto Sans KR", sans-serif; box-sizing:border-box; }
+    a { color:inherit; text-decoration:none; }
+    ul,li { list-style:none; }
+    button { background-color:transparent; border:0; cursor:pointer; }
+
+    .container { width:100%; height:100vh; background:transparent url(images/van1.jpg)no-repeat center/cover; position:relative; }
+    .sidebar { width:360px; height:100%; padding:80px; background-color:#222; color:#fff; position:fixed; z-index:10; }
+    .sidebar button { font-size:20px; color:#fff; position:absolute; top:10px; right:20px; }
+    .sidebar button:hover { color:red; }
+    .gnb li + li { margin-top:10px; }
+    .gnb li a:hover { text-decoration:underline; }
+    .sidebar p { padding:20px 0 60px; margin-top:25px; font-size:13px; border-top:1px dashed #fff; }
+    .user i { margin-right:8px; font-size:24px; }
+    .heading { padding:36px; text-align:center; background-color:rgba(255,255,255,.65); position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); border-radius:24px; }
+    .heading .logo { font-size:40px; }
+    .heading .sub { max-width:270px; margin:16px 0 40px; font-size:15px; word-break:keep-all; }
+    .heading .btn-link { padding:8px 24px; background-color:#222; color:#fff; display:inline-block; }
+    .heading .btn-link:hover { background-color:#f0c11d; }
+    .dot { position:absolute; top:50%; right:20px; transform:translateY(-50%); }
+    .dot li { width:8px; height:8px; margin:10px 0; border-radius:50%; border:2px solid #222; }
+    .dot li.on { background-color:#222; }
+  </style>
+  <script src="https://kit.fontawesome.com/e782e2b5ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <button type="button">
+        <i class="fas fa-close"></i>
+      </button>
+      <ul class="gnb">
+        <li><a href="#">about</a></li>
+        <li><a href="#">news</a></li>
+        <li><a href="#">portfolio</a></li>
+        <li><a href="#">board</a></li>
+        <li><a href="#">album</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <div class="user">
+        <a href="#"><i class="fas fa-user-circle"></i></a>
+        <a href="#"><i class="fas fa-user-circle"></i></a>
+        <a href="#"><i class="fas fa-user-circle"></i></a>        
+      </div>
+    </div>
+    <div class="heading">
+      <h2 class="logo">logo</h2>
+      <p class="sub">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <a href="#" class="btn-link">button</a>
+    </div>
+    <ul class="dot">
+      <li class="on"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</body>
+</html>
