@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240912-슬라이드형태</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e782e2b5ff.js" crossorigin="anonymous"></script>
+  <style>
+    * { padding:0; margin:0; font-family:"Noto Sans KR", sans-serif; box-sizing:border-box; }
+    a { color:inherit; text-decoration:none; }
+    ul,li { list-style:none; }
+    button { background-color:transparent; border:0; outline:none; }
+
+    .box img { height:160px; }
+    #gallery { width:1080px; margin:0 auto; position:relative; overflow:hidden; border:1px solid #e2e2e2; }
+    #gallery .box { width:1800px; display:flex; transform:translateX(-360px); }
+    #gallery .box li { padding:40px 80px; text-align:center; }
+    #gallery .box li:nth-child(even) { background-color:#f1f1f1; }
+    #gallery .box img { border-radius:50%; }
+    #gallery .box h2 { margin-top:24px; margin-bottom:16px; }
+    #gallery .box p { font-size:14px; margin-bottom:16px; }
+    #gallery .box p:last-of-type { font-size:13px; }
+    #gallery .icon i { margin:0 4px; font-size:32px; }
+    #gallery [class^='btn-'] { font-size:26px; position: absolute; top:50%; transform:translateY(-50%); cursor:pointer; }
+    #gallery .btn-next { right:0; }
+  </style>
+  
+</head>
+<body>
+  <section id="gallery">
+    <div class="container">
+      <ul class="box">
+        <li>
+          <img src="images/square160-1.jpg" alt="">
+          <h2>Segment Title</h2>
+          <p>Lorem ipsum dolor sit</p>
+          <p>A adipisci reiciendis repellat cupiditate soluta minima vitae, deserunt dolor quam velit perspiciatis mollitia, provident aperiam. Placeat blanditiis vel omnis nulla cumque!</p>
+          <div class="icon">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/square160-2.jpg" alt="">
+          <h2>Segment Title</h2>
+          <p>Lorem ipsum dolor sit</p>
+          <p>A adipisci reiciendis repellat cupiditate soluta minima vitae, deserunt dolor quam velit perspiciatis mollitia, provident aperiam. Placeat blanditiis vel omnis nulla cumque!</p>
+          <div class="icon">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/square160-3.jpg" alt="">
+          <h2>Segment Title</h2>
+          <p>Lorem ipsum dolor sit</p>
+          <p>A adipisci reiciendis repellat cupiditate soluta minima vitae, deserunt dolor quam velit perspiciatis mollitia, provident aperiam. Placeat blanditiis vel omnis nulla cumque!</p>
+          <div class="icon">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/square160-4.jpg" alt="">
+          <h2>Segment Title</h2>
+          <p>Lorem ipsum dolor sit</p>
+          <p>A adipisci reiciendis repellat cupiditate soluta minima vitae, deserunt dolor quam velit perspiciatis mollitia, provident aperiam. Placeat blanditiis vel omnis nulla cumque!</p>
+          <div class="icon">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/square160-5.jpg" alt="">
+          <h2>Segment Title</h2>
+          <p>Lorem ipsum dolor sit</p>
+          <p>A adipisci reiciendis repellat cupiditate soluta minima vitae, deserunt dolor quam velit perspiciatis mollitia, provident aperiam. Placeat blanditiis vel omnis nulla cumque!</p>
+          <div class="icon">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </li>
+      </ul>
+      <button type="button" class="btn-prev"><i class="fa fa-chevron-left"></i></button>
+      <button type="button" class="btn-next"><i class="fa fa-chevron-right"></i></button>
+    </div>
+  </section>  
+</body>
+</html>

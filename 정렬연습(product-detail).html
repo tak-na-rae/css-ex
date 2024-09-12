@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240912-상품상세</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e782e2b5ff.js" crossorigin="anonymous"></script>
+  <style>
+    * { padding:0; margin:0; font-family:"Noto Sans KR", sans-serif; box-sizing:border-box; }
+    body { min-width:1120px; }
+    a { color:inherit; text-decoration:none; display:inline-block; }
+    ul,li { list-style:none; }
+    select { padding:0 32px 0 12px; appearance:none; background:url(images/arrow-down-b.png)no-repeat right 12px center/16px; outline:none; cursor:pointer; }
+    button { background-color:transparent; border:0; outline:none; cursor:pointer; }
+
+    .wrap { padding:60px 20px; color:#222; }
+    .prd-wrap { width:1080px; margin:0 auto; display:flex; gap:40px; }
+    .prd-images .thumb { text-align:center; }
+    .prd-images .thumb img { width:520px;height:520px; object-fit:cover; }
+    .prd-images .thumb-trigger { margin-top:16px; display:flex; justify-content:center; gap:16px; }
+    .prd-images .thumb-trigger li { min-width:80px; height:80px; }
+    .prd-images .thumb-trigger img { width:80px; height:80px; object-fit:cover; }
+    .prd-detail { padding-top:24px; flex:1; }
+    .prd-detail .info > li + li { margin-top:32px; }
+    .prd-detail .info .name { line-height:1; font-size:36px; font-weight:300; letter-spacing:-1px; }
+    .prd-detail .info .price { font-size:18px; }
+    .prd-detail .info .option select { width:120px; height:40px; margin-right:6px; background-color:#fff; border:1px solid #e2e2e2; }
+    .prd-detail .info .colors span { margin-right:10px; line-height:22px; font-size:14px; vertical-align:top; }
+    .prd-detail .info .colors a { width:24px; height:24px; margin-left:2px; border-radius:50%; }
+    .prd-detail .info .colors a:nth-of-type(1) { background-color:#a8ffbf; }
+    .prd-detail .info .colors a:nth-of-type(2) { background-color:skyblue; }
+    .prd-detail .info .colors a:nth-of-type(3) { background-color:pink; }
+    .prd-detail .info .colors a.active { border:2px solid #222; }
+    .prd-detail .accordion-list { margin-top:50px; border-width:1px 0; border-style:solid; border-color:#222; }
+    .prd-detail .accordion-list .tit { padding:15px 10px 15px 36px; position:relative; cursor:pointer; }
+    .prd-detail .accordion-list .tit::before, 
+    .prd-detail .accordion-list .tit::after { 
+    content: '';
+    width: 12px;
+    height: 1px;
+    background-color:#222;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: rotate(0);
+    transition: .35s ease;
+    display: inline-block;
+  }
+  .prd-detail .accordion-list li:not(.active) .tit::before {
+    transform: rotate(90deg);
+  }
+  .prd-detail .accordion-list > li + li { border-top:1px solid #222; }
+  .prd-detail .accordion-list .txt { padding:0 10px 16px 36px; font-size:14px; color:#666; }
+  .prd-detail .btn-primary { margin-top:60px; display:flex; gap:16px; }
+  .prd-detail .btn-primary button { height:50px; border:1px solid #222; border-radius:50px; flex:1;}
+  .prd-detail .btn-primary button:first-child { background-color:#222; color:#fff; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="prd-wrap">
+      <div class="prd-images">
+        <div class="thumb"><img src="images/bird2.jpg"></div>
+        <ul class="thumb-trigger">
+          <li class="active"><a href="#"><img src="images/bird2.jpg"/></a></li>
+          <li><a href="#"><img src="images/bird1.jpg"/></a></li>
+          <li><a href="#"><img src="images/bird3.jpg"/></a></li>
+          <li><a href="#"><img src="images/bird4.jpg"/></a></li>
+          <li><a href="#"><img src="images/van1.jpg"/></a></li>
+        </ul>
+      </div>
+      <div class="prd-detail">
+        <form action="">
+          <ul class="info">
+            <li class="name">Division Title</li>
+            <li class="price">₩ 10,000</li>
+            <li class="option">
+              <select name="size">
+                <option value="SIZE" selected disabled>SIZE</option>
+                <option value="90">90</option>
+                <option value="95">95</option>
+                <option value="100">100</option>
+                <option value="105">105</option>
+              </select>
+              <select name="qty">
+                <option value="QTY" selected disabled>QTY</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </li>
+            <li class="colors">
+              <span>COLORS</span>
+              <a href="#" class="active"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </li>
+          </ul>
+          <ul class="accordion-list">
+            <li class="active">
+              <p class="tit">DESCRIPTION</p>
+              <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia aspernatur in similique, dolorem eligendi maiores eum laboriosam placeat. Assumenda provident in accusamus, dolorem commodi itaque. Libero eaque temporibus explicabo?</p>
+            </li>
+            <li>
+              <p class="tit">DESCRIPTION</p>
+              <p class="txt" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia aspernatur in similique, dolorem eligendi maiores eum laboriosam placeat. Assumenda provident in accusamus, dolorem commodi itaque. Libero eaque temporibus explicabo?</p>
+            </li>
+          </ul>
+          <div class="btn-primary">
+            <button type="submit">BUTTON</button>
+            <button type="submit">BUTTON</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
