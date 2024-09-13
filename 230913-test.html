@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2409413-테스트</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"/>
+  <style>
+    * { padding:0; margin:0; font-family:"Noto Sans KR", sans-serif; box-sizing:border-box; }
+    a { color:inherit; text-decoration:none; }
+    ul,li { padding:0; list-style:none; }
+    .btn-outline-secondary { white-space:nowrap; }
+    .page-link { background-color:transparent; border:0; }
+    .pagination .page-item:first-child::after,
+    .pagination .page-item:last-child::before {
+      content:'';
+      width:1px;
+      height:16px;
+      margin-top:-8px;
+      background:#ccc;
+      position:absolute;
+      top:50%;
+      display:inline-block;
+    }
+    .pagination .page-item:first-child::after { right:0; }
+    .page-link:hover { background:transparent; }
+
+    @media (max-width:575px) { .col-sm-11 { margin-top:calc(-1 * var(--bs-gutter-y)); } }
+  </style>
+</head>
+<body class="text-bg-light">
+  <nav class="navbar bg-white">
+    <div class="container">
+      <a href="#" class="navbar-brand fw-bold"><i class="bi bi-asterisk"></i> Board</a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary rounded-5" type="submit">마이페이지</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+  
+
+  <div class="container">
+    <div class="row gx-4 align-items-center my-3 mt-5">
+        <p class="h3">최근 게시물</p>
+    </div>
+
+    <div class="row d-flex">
+      <div class="col-lg-8">
+        <div class="gx-4">
+          <div class="col-md-12">
+            <div class="card rounded-0">
+              <div class="card-body">
+
+
+                <div class="d-lg-flex flex-row">
+
+                  <div>
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                      <div class="col-sm-1">
+                        <img src="https://dummyimage.com/40/f1f1f1.jpg" class="card-img rounded-5" alt="...">
+                      </div>
+                      <div class="col-sm-12">
+                        <p class="m-0">작성자</p>
+                        <small class="text-muted">2024.09.13</small>
+                      </div>
+                    </div>
+                      <h5 class="card-title">오늘 안녕 뭐먹지 맛있는거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지</h5>
+                      <p class="card-text">
+                        오늘 안녕 뭐먹지 맛있는거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지
+                      </p>
+                      <ul class="d-flex ">
+                        <li class="text-muted small me-1">댓글 0</li>
+                        <li class="text-muted small me-1">·</li>
+                        <li class="text-muted small me-1">좋아요 0</li>
+                        <li class="text-muted small me-1">·</li>
+                        <li class="text-muted small">조회수 0</li>
+                      </ul>
+                  </div>
+                      
+                  <div class="row m-0 mt-auto ms-auto">
+                    <img src="https://dummyimage.com/120/f1f1f1.jpg" class="card-img rounded-3 p-0 m-0 mt-3" alt="...">
+                  </div>
+                </div>
+
+              </div> <!--card-body-->
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-3">
+            <div class="card rounded-0">
+              <div class="card-body">
+
+
+                <div class="d-lg-flex flex-row">
+
+                  <div>
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                      <div class="col-sm-1">
+                        <img src="https://dummyimage.com/40/f1f1f1.jpg" class="card-img rounded-5" alt="...">
+                      </div>
+                      <div class="col-sm-12">
+                        <p class="m-0">작성자</p>
+                        <small class="text-muted">2024.09.13</small>
+                      </div>
+                    </div>
+                      <h5 class="card-title">오늘 안녕 뭐먹지 맛있는거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지</h5>
+                      <p class="card-text">
+                        오늘 안녕 뭐먹지 맛있는거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지
+                      </p>
+                      <ul class="d-flex ">
+                        <li class="text-muted small me-1">댓글 0</li>
+                        <li class="text-muted small me-1">·</li>
+                        <li class="text-muted small me-1">좋아요 0</li>
+                        <li class="text-muted small me-1">·</li>
+                        <li class="text-muted small">조회수 0</li>
+                      </ul>
+                  </div>
+                      
+                  <div class="row m-0 mt-auto ms-auto">
+                    <img src="https://dummyimage.com/120/f1f1f1.jpg" class="card-img rounded-3 p-0 m-0 mt-3" alt="...">
+                  </div>
+                </div>
+
+              </div> <!--card-body-->
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-3">
+            <div class="card rounded-0">
+              <div class="card-body">
+
+
+                <div class="d-lg-flex flex-row">
+
+                  <div>
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                      <div class="col-sm-1">
+                        <img src="https://dummyimage.com/40/f1f1f1.jpg" class="card-img rounded-5" alt="...">
+                      </div>
+                      <div class="col-sm-12">
+                        <p class="m-0">작성자</p>
+                        <small class="text-muted">2024.09.13</small>
+                      </div>
+                    </div>
+                      <h5 class="card-title">오늘 안녕 뭐먹지 맛있는거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지</h5>
+                      <p class="card-text">
+                        오늘 안녕 뭐먹지 맛있는거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지
+                      </p>
+                      <ul class="d-flex ">
+                        <li class="text-muted small me-1">댓글 0</li>
+                        <li class="text-muted small me-1">·</li>
+                        <li class="text-muted small me-1">좋아요 0</li>
+                        <li class="text-muted small me-1">·</li>
+                        <li class="text-muted small">조회수 0</li>
+                      </ul>
+                  </div>
+                      
+                  <div class="row m-0 mt-auto ms-auto">
+                    <img src="https://dummyimage.com/120/f1f1f1.jpg" class="card-img rounded-3 p-0 m-0 mt-3" alt="...">
+                  </div>
+                </div>
+
+              </div> <!--card-body-->
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-3">
+            <div class="card rounded-0">
+              <div class="card-body">
+
+
+                <div class="d-lg-flex flex-row">
+
+                  <div>
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                      <div class="col-sm-1">
+                        <img src="https://dummyimage.com/40/f1f1f1.jpg" class="card-img rounded-5" alt="...">
+                      </div>
+                      <div class="col-sm-12">
+                        <p class="m-0">작성자</p>
+                        <small class="text-muted">2024.09.13</small>
+                      </div>
+                    </div>
+                      <h5 class="card-title">오늘 안녕 뭐먹지 맛있는거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지</h5>
+                      <p class="card-text">
+                        오늘 안녕 뭐먹지 맛있는거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지
+                      </p>
+                      <ul class="d-flex ">
+                        <li class="text-muted small me-1">댓글 0</li>
+                        <li class="text-muted small me-1">·</li>
+                        <li class="text-muted small me-1">좋아요 0</li>
+                        <li class="text-muted small me-1">·</li>
+                        <li class="text-muted small">조회수 0</li>
+                      </ul>
+                  </div>
+                      
+                  <div class="row m-0 mt-auto ms-auto">
+                    <img src="https://dummyimage.com/120/f1f1f1.jpg" class="card-img rounded-3 p-0 m-0 mt-3" alt="...">
+                  </div>
+                </div>
+
+              </div> <!--card-body-->
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-3 mb-3">
+            <div class="card rounded-0">
+              <div class="card-body">
+
+
+                <div class="d-lg-flex flex-row">
+
+                  <div>
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                      <div class="col-sm-1">
+                        <img src="https://dummyimage.com/40/f1f1f1.jpg" class="card-img rounded-5" alt="...">
+                      </div>
+                      <div class="col-sm-12">
+                        <p class="m-0">작성자</p>
+                        <small class="text-muted">2024.09.13</small>
+                      </div>
+                    </div>
+                      <h5 class="card-title">오늘 안녕 뭐먹지 맛있는거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지</h5>
+                      <p class="card-text">
+                        오늘 안녕 뭐먹지 맛있는거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지
+                      </p>
+                      <ul class="d-flex ">
+                        <li class="text-muted small me-1">댓글 0</li>
+                        <li class="text-muted small me-1">·</li>
+                        <li class="text-muted small me-1">좋아요 0</li>
+                        <li class="text-muted small me-1">·</li>
+                        <li class="text-muted small">조회수 0</li>
+                      </ul>
+                  </div>
+                      
+                  <div class="row m-0 mt-auto ms-auto">
+                    <img src="https://dummyimage.com/120/f1f1f1.jpg" class="card-img rounded-3 p-0 m-0 mt-3" alt="...">
+                  </div>
+                </div>
+
+              </div> <!--card-body-->
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      <div class="col-lg-4 align-self-baseline">
+        <div class="card rounded-0">
+          <div class="card-body p-4 ps-3">
+            <p class="h5 fw-bold mb-4">관련 검색어</p>
+            <div>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+              <button type="button" class="btn btn-outline-secondary rounded-5 mb-2">Secondary</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <nav class="mt-4">
+    <ul class="pagination justify-content-center">
+      <li class="page-item position-relative">
+        <a class="page-link link-dark" href="#" tabindex="-1">&lt; 이전</a>
+      </li>
+      <li class="page-item"><a class="page-link link-dark fw-bold" href="#">1</a></li>
+      <li class="page-item"><a class="page-link link-dark" href="#">2</a></li>
+      <li class="page-item"><a class="page-link link-dark" href="#">3</a></li>
+      <li class="page-item"><a class="page-link link-dark" href="#">4</a></li>
+      <li class="page-item"><a class="page-link link-dark" href="#">5</a></li>
+      <li class="page-item"><a class="page-link link-dark" href="#">6</a></li>
+      <li class="page-item"><a class="page-link link-dark" href="#">7</a></li>
+      <li class="page-item"><a class="page-link link-dark" href="#">8</a></li>
+      <li class="page-item"><a class="page-link link-dark" href="#">9</a></li>
+      <li class="page-item"><a class="page-link link-dark" href="#">10</a></li>
+      <li class="page-item position-relative">
+        <a class="page-link link-dark" href="#">다음 &gt;</a>
+      </li>
+    </ul>
+  </nav>
+
+  <footer class="footer bg-dark text-white mt-5">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-lg-6 h-100 my-auto">
+          <ul class="list-inline"><!--list-group을 inline으로 변경하면 가로 리스트로 나옴-->
+            <li class="list-inline-item"><a href="#!">About</a></li>
+            <li class="list-inline-item">.</li>
+            <li class="list-inline-item"><a href="#!">Contact</a></li>
+            <li class="list-inline-item">.</li>
+            <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+            <li class="list-inline-item">.</li>
+            <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+          </ul>
+          <p class="small">&copy; Your Website 2024 All Rights Reserved</p>
+        </div>
+
+        <div class="col-lg-6 h-100 text-lg-end my-auto">
+          <ul class="list-inline">
+            <li class="list-inline-item me-3">
+              <a href="#!"><i class="bi bi-facebook fs-4"></i></a>
+            </li>
+            <li class="list-inline-item me-3">
+              <a href="#!"><i class="bi bi-twitter fs-4"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#!"><i class="bi bi-instagram fs-4"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

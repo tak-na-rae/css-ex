@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240913-GlassCard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"/>
+  <style>
+    * { padding:0; margin:0; font-family:"Noto Sans KR", sans-serif; box-sizing:border-box; }
+    a { color:inherit; text-decoration:none; }
+    ul,li { list-style:none; }
+
+    .container { width:100%; height:100vh; background:url(images/240913_back.png)no-repeat center/cover; display:flex; align-items:center; justify-content:center; }
+    .card { width:90%; max-width:440px; padding:50px 35px; text-align:center; color:#f1f1f1; background-color:rgba(255,255,255,.2); backdrop-filter:blue(5px); border:rgba(255,255,255,.2); border-radius:16px; box-shadow:0 4px 30px rgba(0,0,0,.1); }
+    .card img { width:140px; }
+    .card h2 { margin-top:20px; font-size:40px; }
+    .card p { margin:10px 0; font-size:18px; }
+    .card .links img { width:40px; margin:10px 5px; border-radius:50%; transition:.15s;}
+    .card .links img:hover { background:#ff01cf; }
+    .btn { padding:10px 30px 14px; margin-top:30px; background-color:#fff; display:inline-block; font-size:18px; font-weight:500; color:#ff01cf; border-radius:30px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" data-tilt>
+      <img src="images/240913_profile.png"/>
+      <h2>John Smith</h2>
+      <p>I'm Student I like to learn coding!</p>
+      <div class="links">
+        <a href="#"><img src="images/240913_facebook.png" alt=""></a>
+        <a href="#"><img src="images/240913_twitter.png" alt=""></a>
+        <a href="#"><img src="images/240913_telegram.png" alt=""></a>
+      </div>
+      <a href="#" class="btn">Message Me</a>
+    </div>
+  </div>
+
+  <!-- VanillaTilt -->
+  <script src="js/vanilla-tilt.js"></script>
+</body>
+</html>
