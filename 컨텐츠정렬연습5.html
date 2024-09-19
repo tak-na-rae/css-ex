@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240919-컨텐츠정렬연습5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"/>
+  <style>
+    * { padding: 0; margin: 0; font-family: "Noto Sans KR", sans-serif; box-sizing: border-box; }
+    a { color: inherit; text-decoration: none; }
+    ul, li { list-style: none; }
+
+    section { width:100%; min-width:1200px; height:760px; background:transparent url(images/bssbg.png)no-repeat center/cover; color:#222; }
+    section .container { width:1200px; margin:0 auto; }
+    section .title { padding-top:160px; text-align:center; }
+    section .title h1 { font-size:72px; }
+    section .title p { max-width:60%; margin:40px auto 80px; font-size:14px; }
+    section .list { display:flex; }
+    section .list li { width:33.333%; padding:40px 10px; background-color:#222; color:#fff; position:relative; display:flex; gap:20px; }
+    section .list li:hover { background-color:#abad9a; }
+    section .list li:hover::after { content:''; width:0; height:0; position:absolute; top:-20px; left:calc(50% - 10px); border:10px solid transparent; border-bottom-color:#abad9a; }
+    section .list li .txt { font-size:14px; }
+    section .list li .txt p { margin-top:8px; line-height:1.5; font-weight:300; }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="title">
+        <h1>Division Title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem accusantium ad repellendus iure incidunt libero, numquam explicabo officiis quos, tempore, optio maxime atque.</p>
+      </div>
+      <ul class="list">
+        <li>
+          <img src="https://picsum.photos/180/120">
+          <div class="txt">
+            <h2>DESCRIPTION</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quod fugit ipsum?</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://picsum.photos/180/120">
+          <div class="txt">
+            <h2>DESCRIPTION</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quod fugit ipsum?</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://picsum.photos/180/120">
+          <div class="txt">
+            <h2>DESCRIPTION</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quod fugit ipsum?</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
