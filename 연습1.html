@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>240920-연습1(겹치기)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+  <style>
+    * { padding: 0; margin: 0; font-family: "Noto Sans KR", sans-serif; box-sizing: border-box; }
+    a { color: inherit; text-decoration: none; }
+    ul, li { list-style: none; }
+
+    .wrap { width:800px; height:620px; margin:50px auto; text-align:center; position:relative; }
+    h1 { font-size:28px; font-family:"Fascinate Inline", system-ui; }
+    .item { height:440px; padding:0 60px; position:relative; }
+    .item::before { content:''; width:100%; height:100px; background-color:#37c3bf; position:absolute; bottom:0; left:0; display:block; }
+    .item::after { content:''; width:260px; height:300px; background:linear-gradient(to bottom, #fec704 0%, #fc80c1 100%); position:absolute; bottom:-60px; left:42%; display:block; }
+    .item > li:has(img) { position:absolute; bottom:0; left:60px; }
+    .item > li:has(img) img { display:block; }
+    .item > li:has(h2) { width:350px; height:240px; padding:25px 20px 30px 25px; text-align:left; background-color:#fff; position:absolute; bottom:-30px; left:calc(42% + 56px); z-index:1; }
+    .item > li:has(h2) h2 { font-family:"Fascinate Inline", system-ui; letter-spacing:-.5px; }
+    .item > li:has(h2) p { margin-top:12px; margin-bottom:36px; font-size:14px; color:#999; }
+    .item > li:has(h2) a { color:#fc80c1; }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Make your Children's life Special</h1>
+    <ul class="item">
+      <li><img src="images/240920_facility.jpg"/></li>
+      <li>
+        <div class="txt">
+          <h2>Relaxation and comfort</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolores aspernatur dolorem accusamus deleniti quas, perferendis maiores explicabo dicta assumenda?</p>
+          <a href="#">READ MORE</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
